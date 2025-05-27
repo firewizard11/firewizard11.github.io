@@ -1,367 +1,203 @@
 <!DOCTYPE HTML>
 <!--
-	Strongly Typed by HTML5 UP
+	Antique Bookstore - Refactored from Strongly Typed by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
-		<title>Strongly Typed by HTML5 UP</title>
+		<title>Antique Bookstore</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<meta name="description" content="Antique Bookstore - Supplying books to collectors, libraries & readers for over 50 years" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="homepage is-preload">
+
+	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
+			<!-- Skip to main content link for accessibility -->
+			<a href="#main" class="skip-link sr-only">Skip to main content</a>
 
 			<!-- Header -->
-				<section id="header">
-					<div class="container">
+			<header id="header">
+				<div class="container">
+					<!-- Logo -->
+					<h1 id="logo"><a href="index.html">Antique Bookstore</a></h1>
+					<p>Supplying books to collectors, libraries & readers for over 50 years</p>
 
-						<!-- Logo -->
-							<h1 id="logo"><a href="index.html">Strongly Typed</a></h1>
-							<p>A responsive HTML5 site template. Manufactured by HTML5 UP.</p>
-
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li><a class="icon solid fa-home" href="index.html"><span>Introduction</span></a></li>
-									<li>
-										<a href="#" class="icon fa-chart-bar"><span>Dropdown</span></a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>
-									<li><a class="icon solid fa-cog" href="left-sidebar.html"><span>Left Sidebar</span></a></li>
-									<li><a class="icon solid fa-retweet" href="right-sidebar.html"><span>Right Sidebar</span></a></li>
-									<li><a class="icon solid fa-sitemap" href="no-sidebar.html"><span>No Sidebar</span></a></li>
-								</ul>
-							</nav>
-
-					</div>
-				</section>
-
-			<!-- Features -->
-				<section id="features">
-					<div class="container">
-						<header>
-							<h2>Gentlemen, behold! This is <strong>Strongly Typed</strong>!</h2>
-						</header>
-						<div class="row aln-center">
-							<div class="col-4 col-6-medium col-12-small">
-
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-										<header>
-											<h3>Okay, so what is this?</h3>
-										</header>
-										<p>This is <strong>Strongly Typed</strong>, a free, fully responsive site template
-										by <a href="http://html5up.net">HTML5 UP</a>. Free for personal and commercial use under the
-										<a href="http://html5up.net/license">CCA 3.0 license</a>.</p>
-									</section>
-
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
-
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Nice! What is HTML5 UP?</h3>
-										</header>
-										<p><a href="http://html5up.net">HTML5 UP</a> is a side project of <a href="http://twitter.com/ajlkn">AJ’s</a> (= me).
-										I started it as a way to both test my responsive tools and sharpen up my coding
-										and design skills a bit.</p>
-									</section>
-
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
-
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>What's this built with?</h3>
-										</header>
-										<p><strong>Responsive Tools</strong> is a simple set of tools for building responsive
-										sites and apps. All of my templates at <a href="http://html5up.net">HTML5 UP</a> are built using these tools.</p>
-									</section>
-
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><a href="#" class="button icon solid fa-file">Tell Me More</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-
-			<!-- Banner -->
-				<section id="banner">
-					<div class="container">
-						<p>Use this space for <strong>profound thoughts</strong>.<br />
-						Or an enormous ad. Whatever.</p>
-					</div>
-				</section>
+					<!-- Nav -->
+					<nav id="nav" aria-label="Main Navigation">
+						<ul>
+							<li><a class="icon solid fa-home" href="index.html"><span>Home</span></a></li>
+							<li><a class="icon solid fa-book" href="#catalogue"><span>Current Catalogue</span></a></li>
+							<li><a class="icon solid fa-archive" href="#"><span>Previous Catalogues</span></a></li>
+							<li><a class="icon solid fa-map-marker" href="#locate"><span>Locate Us</span></a></li>
+							<li><a class="icon solid fa-info-circle" href="#about"><span>About Us</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
 
 			<!-- Main -->
-				<section id="main">
-					<div class="container">
-						<div class="row">
+			<main id="main">
+				<div class="container">
+					<!-- Catalogue Section -->
+					<section id="catalogue" aria-labelledby="catalogue-heading">
+						<h2 id="catalogue-heading">Current Catalogue</h2>
 
-							<!-- Content -->
-								<div id="content" class="col-8 col-12-medium">
-
-									<!-- Post -->
-										<article class="box post">
-											<header>
-												<h2><a href="#">I don’t want to say <strong>it’s the aliens</strong> ...<br />
-												but it’s the aliens.</a></h2>
-											</header>
-											<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>I mean isn't it possible?</h3>
-											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-											Curabitur leo nibh, rutrum eu malesuada in tristique.</p>
-											<ul class="actions">
-												<li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
-											</ul>
-										</article>
-
-									<!-- Post -->
-										<article class="box post">
-											<header>
-												<h2><a href="#">By the way, many thanks to <strong>regularjane</strong>
-												for these awesome demo photos</a></h2>
-											</header>
-											<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>You should probably check out her work</h3>
-											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-											Curabitur leo nibh, rutrum malesuada.</p>
-											<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat
-											Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula
-											vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet
-											magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
-											tristique at erat. Curabitur leo nibh, rutrum eu malesuada in, tristique
-											at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
-											tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
-											magna tempus.</p>
-											<ul class="actions">
-												<li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
-											</ul>
-										</article>
-
-								</div>
-
-							<!-- Sidebar -->
-								<div id="sidebar" class="col-4 col-12-medium">
-
-									<!-- Excerpts -->
-										<section>
-											<ul class="divided">
-												<li>
-
-													<!-- Excerpt -->
-														<article class="box excerpt">
-															<header>
-																<span class="date">July 30</span>
-																<h3><a href="#">Just another post</a></h3>
-															</header>
-															<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
-															suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
-														</article>
-
-												</li>
-												<li>
-
-													<!-- Excerpt -->
-														<article class="box excerpt">
-															<header>
-																<span class="date">July 28</span>
-																<h3><a href="#">And another post</a></h3>
-															</header>
-															<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
-															suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
-														</article>
-
-												</li>
-												<li>
-
-													<!-- Excerpt -->
-														<article class="box excerpt">
-															<header>
-																<span class="date">July 24</span>
-																<h3><a href="#">One more post</a></h3>
-															</header>
-															<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
-															suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
-														</article>
-
-												</li>
-											</ul>
-										</section>
-
-									<!-- Highlights -->
-										<section>
-											<ul class="divided">
-												<li>
-
-													<!-- Highlight -->
-														<article class="box highlight">
-															<header>
-																<h3><a href="#">Something of note</a></h3>
-															</header>
-															<a href="#" class="image left"><img src="images/pic06.jpg" alt="" /></a>
-															<p>Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
-															viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
-															convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
-															facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
-															<ul class="actions">
-																<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
-															</ul>
-														</article>
-
-												</li>
-												<li>
-
-													<!-- Highlight -->
-														<article class="box highlight">
-															<header>
-																<h3><a href="#">Something of less note</a></h3>
-															</header>
-															<a href="#" class="image left"><img src="images/pic07.jpg" alt="" /></a>
-															<p>Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
-															viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
-															convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
-															facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
-															<ul class="actions">
-																<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
-															</ul>
-														</article>
-
-												</li>
-											</ul>
-										</section>
-
-								</div>
-
+						<!-- Live region for screen readers to announce slide changes -->
+						<div id="slideshow-live-region" class="sr-only" aria-live="polite"></div>
+						<div style="text-align: center;">
+							<p class="slideshow-counter"><span id="current-slide">1</span> of 5</p>
 						</div>
-					</div>
-				</section>
+
+						<div id="catalogue-slideshow" class="slideshow-container" role="region" aria-roledescription="carousel" aria-label="Book catalogue slideshow">
+							<div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 1 of 5">
+								<img src="assets/images/pride_and_predjudice.png" alt="Pride and Prejudice first edition book cover" class="book-image" />
+								
+								<div class="book-info">
+									<h3>Pride and Prejudice (1813)</h3>
+									<p>First edition of Jane Austen's masterpiece, in original boards with gilt lettering. One of only 1,500 copies from the first printing, this rare find is in exceptional condition with minimal foxing.</p>
+									<p><strong>Price:</strong> $85,000</p>
+								</div>
+							</div>
+
+							<div class="slide" style="display:none;" role="group" aria-roledescription="slide" aria-label="Slide 2 of 5" aria-hidden="true">
+								<img src="assets/images/wealth_of_nations.png" alt="The Wealth of Nations book cover" class="book-image" />
+							
+								<div class="book-info">
+									<h3>The Wealth of Nations (1776)</h3>
+									<p>First edition of Adam Smith's groundbreaking economic treatise. This copy features the original full calf binding with marbled endpapers and gilt spine compartments. A cornerstone of economic thought.</p>
+									<p><strong>Price:</strong> $125,000</p>
+								</div>
+							</div>
+
+							<div class="slide" style="display:none;" role="group" aria-roledescription="slide" aria-label="Slide 3 of 5" aria-hidden="true">
+								<img src="assets/images/moby_dick.png" alt="Moby Dick first edition book cover" class="book-image" />
+						
+								<div class="book-info">
+									<h3>Moby Dick (1851)</h3>
+									<p>First American edition of Herman Melville's epic novel, complete with the iconic whale illustration. This copy retains its original embossed cloth binding with gilt lettering and minimal restoration.</p>
+									<p><strong>Price:</strong> $65,000</p>
+								</div>
+							</div>
+							
+							<div class="slide" style="display:none;" role="group" aria-roledescription="slide" aria-label="Slide 4 of 5" aria-hidden="true">
+								<img src="assets/images/origin_of_species.png" alt="The Origin of Species book cover" class="book-image" />
+						
+								<div class="book-info">
+									<h3>On the Origin of Species (1859)</h3>
+									<p>First edition, first printing of Darwin's revolutionary work. One of only 1,250 copies printed, this example includes the folding diagram and is bound in the publisher's original green cloth with gilt spine lettering.</p>
+									<p><strong>Price:</strong> $175,000</p>
+								</div>
+							</div>
+							
+							<div class="slide" style="display:none;" role="group" aria-roledescription="slide" aria-label="Slide 5 of 5" aria-hidden="true">
+								<img src="assets/images/great_gatsby.png" alt="The Great Gatsby book cover" class="book-image" />
+						
+								<div class="book-info">
+									<h3>The Great Gatsby (1925)</h3>
+									<p>First edition, first printing with the original dust jacket. This exceptional copy of F. Scott Fitzgerald's masterpiece includes the iconic celestial eyes cover art by Francis Cugat, rarely found intact.</p>
+									<p><strong>Price:</strong> $195,000</p>
+								</div>
+							</div>
+							<button class="prev" aria-label="Previous slide">&lt;</button>
+							<button class="next" aria-label="Next slide">&gt;</button>
+						</div>
+					</section>
+
+					<!-- Location Section -->
+					<section id="locate" class="box" aria-labelledby="locate-heading">
+						<h2 id="locate-heading">Locate Us</h2>
+
+						<div class="row">
+							<!-- Map Column -->
+							<div class="col-6 col-12-medium">
+								<div class="map-container">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.011111111111!2d151.19999999999993!3d-33.82611111111111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a6e111111111%3A0x1234567890abcdef!2sCrows%20Nest%20NSW%202065!5e0!3m2!1sen!2sau!4v0000000000000"
+										style="border:0;" 
+										allowfullscreen="" 
+										loading="lazy"
+										title="Google Maps location of Antique Bookstore in Crows Nest, NSW"
+										aria-label="Map showing our location in Crows Nest, NSW">
+									</iframe>
+								</div>
+							</div>
+
+							<!-- Opening Times Column -->
+							<div class="col-6 col-12-medium">
+								<h3>Opening Times:</h3>
+								<ul>
+									<li><strong>Monday</strong>: Closed</li>
+									<li><strong>Tuesday</strong>: 10am - 5pm</li>
+									<li><strong>Wednesday</strong>: 10am - 5pm</li>
+									<li><strong>Thursday</strong>: 10am - 5pm</li>
+									<li><strong>Friday</strong>: 10am - 5pm</li>
+									<li><strong>Saturday</strong>: 10am - 5pm</li>
+									<li><strong>Sunday</strong>: Closed</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<!-- About Section -->
+					<section id="about" class="box" aria-labelledby="about-heading">
+						<h2 id="about-heading">About Us</h2>
+						
+						<p>Hi, I'm Jonathan Reid, owner and curator of <strong>Antique Bookstore</strong>, a tranquil haven for book lovers located in Crows Nest, just a short drive from Sydney's city centre. For over 25 years, I've specialized in the sale of rare, antiquarian, and collectible books to individuals, libraries, and dealers across Australia and around the world.</p>
+					
+						<p>As a member of both the <strong>Australian and New Zealand Association of Antiquarian Booksellers (ANZAAB)</strong> and the <strong>International League of Antiquarian Booksellers (ILAB)</strong>, I'm committed to the highest ethical and professional standards. Every book in our collection is carefully researched and described with transparency and care, ensuring authenticity and integrity.</p>
+					
+						<p>With a rotating inventory of around 20,000 titles—ranging from 18th-century atlases and fine bindings to modern first editions and unique curiosities—Antique Bookstore offers something for every bibliophile. I also publish regular catalogues featuring special finds, new arrivals, and staff picks.</p>
+					
+						<p>Whether you're a serious collector or simply someone who enjoys the charm of old books, I invite you to visit us in-store or browse our selection online. At Antique Bookstore, literature lives on—beautifully preserved and waiting to be discovered.</p>
+					</section>
+				</div>
+			</main>
 
 			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<header>
-							<h2>Questions or comments? <strong>Get in touch:</strong></h2>
-						</header>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<section>
-									<form method="post" action="#">
-										<div class="row gtr-50">
-											<div class="col-6 col-12-small">
-												<input name="name" placeholder="Name" type="text" />
-											</div>
-											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message"></textarea>
-											</div>
-											<div class="col-12">
-												<a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
-											</div>
-										</div>
-									</form>
-								</section>
-							</div>
-							<div class="col-6 col-12-medium">
-								<section>
-									<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
-									leo nibh, rutrum eu malesuada.</p>
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon solid fa-home">
-													1234 Somewhere Road<br />
-													Nashville, TN 00000<br />
-													USA
-												</li>
-												<li class="icon solid fa-phone">
-													(000) 000-0000
-												</li>
-												<li class="icon solid fa-envelope">
-													<a href="#">info@untitled.tld</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon brands fa-twitter">
-													<a href="#">@untitled</a>
-												</li>
-												<li class="icon brands fa-instagram">
-													<a href="#">instagram.com/untitled</a>
-												</li>
-												<li class="icon brands fa-dribbble">
-													<a href="#">dribbble.com/untitled</a>
-												</li>
-												<li class="icon brands fa-facebook-f">
-													<a href="#">facebook.com/untitled</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</section>
-							</div>
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<!-- Contact Info -->
+						<div class="col-6 col-12-medium">
+							<h3>Contact Us</h3>
+							<ul class="unstyled">
+								<li><strong>Address:</strong><br>
+									Antique Bookstore<br>
+									123 Pacific Highway<br>
+									Crows Nest, NSW 2065<br>
+									Australia
+								</li>
+								<li><strong>Email:</strong> <a href="mailto:info@antiquebookstore.com.au">info@antiquebookstore.com.au</a></li>
+								<li><strong>Phone:</strong> <a href="tel:+61291234567">+61 2 9123 4567</a></li>
+							</ul>
+						</div>
+
+						<!-- Store Hours or Extra Info -->
+						<div class="col-6 col-12-medium">
+							<h3>Stay Connected</h3>
+							<ul class="social">
+								<li><a class="icon brands fa-facebook-f" href="#" aria-label="Facebook"><span>Facebook</span></a></li>
+								<li><a class="icon brands fa-instagram" href="#" aria-label="Instagram"><span>@theantiquebookshop</span></a></li>
+							</ul>
+							<p>Follow us for updates on new arrivals, rare finds, and literary events.</p>
 						</div>
 					</div>
-					<div id="copyright" class="container">
-						<ul class="links">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</section>
+				</div>
 
+				<!-- Copyright -->
+				<div id="copyright" class="container">
+					<ul class="links">
+						<li>&copy; Antique Bookstore. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
